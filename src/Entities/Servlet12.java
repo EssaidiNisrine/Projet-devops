@@ -20,6 +20,7 @@ public class Servlet12 extends HttpServlet {
 
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		//Servlet 12
 	      RequestDispatcher requestDispatcher=request.getRequestDispatcher("/WEB-INF/dashboard2.jsp");
 	      requestDispatcher .forward(request, response);      
 	}

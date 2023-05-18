@@ -37,6 +37,7 @@ public class Servlet1 extends HttpServlet {
 
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		//Servlet 2
               DAOProfesseur daoProf=new DAOProfesseur();
               DAOEnseigner daoEnseigne=new DAOEnseigner();
               ArrayList<Professeur> listProf= new ArrayList<Professeur>();

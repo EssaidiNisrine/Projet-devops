@@ -133,8 +133,8 @@
                 <hr class="container-fluid">
             </div>
             <div class="head">
-                <h2>infos professeurs</h2>
-                <p>consulter les information concernanant les profs d'universite</p>
+                <h2>informations professeurs</h2>
+                <p>consulter les informations concernanant les profs d'universite</p>
             </div>
             
               <div class='infor'>

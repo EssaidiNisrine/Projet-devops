@@ -32,6 +32,7 @@ public class Servlet0 extends HttpServlet {
     }
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		//La premiere servlet
               HttpSession session=request.getSession();
 		      String username=request.getParameter("username");
               String password=request.getParameter("password");
