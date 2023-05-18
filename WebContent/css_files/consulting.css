@@ -1,0 +1,107 @@
+/* start component  */
+
+.container>.box-holder {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 33px;
+    margin-top: calc(64px * 2);
+}
+
+.container>.box-holder .cont {
+    box-shadow: 0px 12px 20px 0px rgb(0 0 0 / 13%), 0px 2px 4px 0px rgb(0 0 0 / 12%);
+    padding: 15px;
+    background-color: white;
+    transition: .3s;
+}
+
+
+.container>.box-holder .box1 {
+
+    position: relative;
+    display: block;
+    overflow: hidden;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.container>.box-holder .box1::before {
+    content: "";
+    width: 0%;
+    height: 8px;
+    position: absolute;
+    top: 0%;
+    left: 0;
+    transform: translateX(-50%);
+    background-color: #2f323a;
+    transition: all ease .3s;
+}
+
+.container>.box-holder .box1::after {
+    content: "";
+    width: 0%;
+    height: 8px;
+    position: absolute;
+    top: 0%;
+    right: 1%;
+    transform: translateX(50%);
+    background-color: #ff5722;
+    transition: all ease .3s;
+    z-index: 5;
+}
+
+.container>.box-holder .box1:hover::after,
+.container>.box-holder .box1:hover::before {
+    width: 99%;
+}
+
+.container>.box-holder .box1:hover {
+    opacity: .8;
+
+}
+
+.container>.box-holder .cont:hover {
+    transform: scale(1.1);
+}
+
+/*Mobile */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* Medium */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* Large */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+
+.container>.box-holder .box1 h3 {
+    color: #FFF;
+    font-size: 22px;
+}
+
+.container>.box-holder .box1 i {
+    color: #FFF;
+    font-size: 28px;
+}
+
+.container>.box-holder a {
+    display: block;
+}
+
+/* End component  */

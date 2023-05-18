@@ -1,0 +1,161 @@
+@charset "windows-1256";
+
+footer {
+    position: relative;
+}
+
+table#myTable {
+    margin-bottom: 55px;
+}
+
+/*Start main component */
+
+.container {
+    --color: #5ea9ff;
+    --color2 :#299be4;
+}
+
+.container .head {
+    text-align: center;
+    margin: calc(28px + 64px) 0 28px;
+}
+
+.container .head h2 {
+    font-size: 26px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.container .head p {
+    letter-spacing: -0.2px;
+    font-weight: 600;
+    color: #777;
+}
+
+
+.container .searchBlock>input:first-of-type {
+    width: 100%;
+    padding: 6px 47px;
+    border-radius: 8px;
+    border: 1px solid #cdcbcb;
+    background-color: #eee;
+    position: relative;
+    margin-bottom: 18px;
+    transition : .7s linear ;
+	caret-color : var(--color);
+	color : var(--color2);
+}
+
+.container .searchBlock>input.module:first-of-type {
+    caret-color: var(--color);
+    color: var(--color);
+}
+
+.container .searchBlock {
+    position: relative;
+}
+
+.container .searchBlock i {
+ position: absolute;
+    transform: translate(23px, 12px);
+    z-index: 2;
+    font-size: 18px;
+    color: var(--color);
+    font-weight: bold;
+}
+
+input::placeholder {
+    font-weight: 600px;
+}
+
+
+
+input:focus {
+    outline: none;
+}
+
+/*Start table*/
+
+
+body {
+    color: #566787;
+}
+.table{
+    min-height: 268px;
+}
+
+table thead th:first-of-type {
+    border-radius: 14px 0 0 0;
+}
+td {
+	max-height: 45px !important;
+}
+
+table thead{
+	background : var(--color2);
+}
+
+table thead th:last-of-type {
+    border-radius: 0 14px 0 0;
+}
+
+input[type="submit"] ,button {
+  padding: 2px 5px !important;
+    border-radius: 11px !important;
+    height: 36px;
+    width: 91px;
+    margin-right: 10px;
+}
+
+th {
+    border-top: none !important;
+}
+
+modal.fade{
+	width : 100% ;
+}
+
+
+form.p1>input[type="submit"]{
+	margin: 0 auto 34px auto ;
+    display: block !important;
+    transition : .6s ;
+}
+form.p1>input[type="submit"]:hover{
+	background : white;
+	color : var(--color);
+	border : 1px solid var(--color);
+	weight : bold;
+}
+
+td a{
+	position: relative;
+}
+
+td a>i{
+	    position: absolute;
+    font-size: 13px;
+    top: 31%;
+    left: 7%;
+    color: #FFf;
+}
+
+button:not(textarea+button) ,input[type="submit"]{
+	    font-size: 14px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: flex-end ;
+}
+
+i.mm{
+transform: translate(32px, 2px);
+    color: #FFF;
+	
+}
+
+form.p1>i {    
+	transform: translate(30px, -15px);
+    font-size: 16px;}
+
+
+/*End main component */

@@ -1,0 +1,192 @@
+@charset "windows-1256";
+
+/*Start temp modification */
+.nav>div>div h3 {
+    font-size: 15px !important;
+    right: -19px !important;
+}
+
+footer {
+    position: fixed;
+    width: 100%;
+    background: #22242a;
+    color: #fff;
+    padding: 20px 30px 10px;
+    bottom: 0;
+}
+
+/*End  modification */
+/*Start head*/
+.container .head {
+    text-align: center;
+    margin: calc(64px + 28px) 0 28px;
+}
+
+.container .head h2 {
+    font-size: 26px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.container .head p {
+    letter-spacing: -0.2px;
+    font-weight: 600;
+    color: #777;
+}
+
+/*End head*/
+/* Start Assigning  */
+
+.container div.assigning {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.container div.assigning>input {
+    padding: 4px 21px;
+    border-radius: 8px;
+    border: 1px solid #cdcbcb;
+    background-color: #eee;
+    position: relative;
+    width: 38%;
+}
+
+.container div.assigning>input:focus {
+    transform: scale(1.1);
+}
+
+/* End Assigning  */
+/* Start table*/
+.container table th {
+    text-transform: capitalize;
+}
+
+.container table th:first-child {
+    border-radius: 10px 0 0;
+}
+
+.container table th:last-of-type {
+    border-radius: 0 10px 0 0;
+}
+
+/* End table*/
+
+body {
+    color: #566787;
+    font-family: var(--body-font);
+    font-size: 13px;
+}
+
+
+
+.container input[type="submit"] {
+    width: 91% ;
+    margin-left: 10px;
+    height: 37px;
+    font-size: 18px;
+    background-color: #5ea9ff;
+    color: white;
+    border: navajowhite;
+    border-radius: 6px;
+    transition: linear .5s;
+
+}
+
+.container input[type="submit"]:hover {
+    background-color: #FFF;
+    color: #5ea9ff;
+    border: 1px solid #5ea9ff;
+}
+
+
+input[list="liste1"],input[list="liste2"]{
+	display: inline;
+    width: 40%;
+    margin-left: 10px;
+    background-color: #eeeeee;
+    box-shadow: 0 0 0 0 !important;
+}
+	
+.p1 {
+	display: inline-flex;
+	width : 100%
+	}
+
+.p1>div:not(div:last-of-type){
+	width: 40%;}
+
+.p1>div>input[list="liste2"] ,.p1>div>input[list="liste1"]{
+	width: 100%;
+}
+.p1>div>input[list="liste1"]{
+transform: translateX(10px);
+}
+
+.p1>div:last-of-type{
+    display: inline-flex;
+    width: 20%;
+}
+
+
+
+@media (max-width:771px) {
+  
+
+    .container input[type="submit"] {
+        width: 26%;
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+
+div.my_alert{
+	margin: 42px auto;
+    width: 75%;
+    border-radius: 11px;
+    /* outline: 1px solid red; */
+    box-shadow: -3px 2px 5px 0px #00000047;
+}
+div.my_alert i{
+	    font-size: 26px;
+    transform: translate(-1px, 2px);
+}
+div.my_alert>p{
+	      color: #08788e;
+    font-size: 15px;
+    margin-top: 5px;
+    margin-left: 32px;
+}
+div.my_alert strong{
+font-size: 21px;
+}
+
+
+datalist {
+  position: absolute;
+  max-height: 20em;
+  border: 0 none;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+datalist option {
+  font-size: 0.8em;
+  padding: 0.3em 1em;
+  background-color: #ccc;
+  cursor: pointer;
+}
+
+/* option active styles */
+datalist option:hover,
+datalist option:focus {
+  color: #fff;
+  background-color: #036;
+  outline: 0 none;
+}
+
+

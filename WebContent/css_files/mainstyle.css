@@ -1,0 +1,45 @@
+/*Staret Global variables*/
+
+:root {
+    --main-color: #f95959;
+    --main-alt-color: #c42d2d;
+    --duration: .3s;
+    --background-color: #f7edd5;
+}
+
+/*End Global variables   */
+/* Start Global Rules */
+
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Cairo', sans-serif;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+input {
+    outline: none !important;
+}
+
+/*End Global Rules*/

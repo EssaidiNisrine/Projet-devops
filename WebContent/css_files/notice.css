@@ -1,0 +1,67 @@
+@charset "windows-1256";
+
+.container.mom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.container.mom>div:first-of-type {
+    width: 100%;
+    background: linear-gradient(90deg, #22242a 50%, #7d7e80);
+    margin: 10px 0;
+    color: white;
+    text-align: center;
+    padding: 21px;
+    font-size: 23px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.container.mom>div:first-of-type p {
+    margin: 0;
+}
+
+.container.mom>div:last-of-type {
+    width: 100%;
+}
+
+.container.mom form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.container.mom>div:last-of-type textarea {
+    width: 100%;
+    border-radius: 9px;
+    height: 200px;
+    padding: 10px 20px;
+    border: 1px solid #cbcaca;
+    caret-color: #777;
+    color: #777;
+    resize: none;
+    transition: all .3s
+}
+
+.container.mom>div:last-of-type textarea::placeholder {
+    color: #777;
+}
+
+.container.mom>div:last-of-type textarea:focus {
+    outline: none;
+    background-color: #eee;
+}
+
+.l{
+      font-size: 18px;
+    padding: 8px 20px;
+    background: #78797b;
+    color: white;
+    border-radius: 13px;
+    margin-top: 21px;
+}
+
+

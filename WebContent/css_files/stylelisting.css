@@ -1,0 +1,209 @@
+@charset "windows-1256";
+
+.container {
+    --page-color-1: #5ea9ff;
+    --page-color-2: #45ddbe;
+    --page-color-3: #c18632;
+    --page-color-4: #ff778d;
+}
+
+
+/*special tree*/
+.container .tree {
+    margin-top: 79px;
+}
+
+.container .tree span:nth-last-of-type(2) {
+    color: #777;
+    font-weight: 600;
+    font-size: large;
+}
+
+.container .tree span a {
+    color: black;
+    font-weight: 700;
+    transition: .3s;
+}
+
+.container .tree span a.filiere:hover {
+    color: var(--page-color-2)
+}
+
+.container .tree span a.prof:hover {
+    color: var(--page-color-1)
+}
+
+.container .tree span a.modalite:hover {
+    color: var(--page-color-4)
+}
+
+.container .tree span a:hover {
+    color: var(--page-color-3)
+}
+
+/*end special tree*/
+
+.container .head {
+    text-align: center;
+    margin: 28px 0
+}
+
+.container .head h2 {
+    font-size: 26px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.container .head p {
+    letter-spacing: -0.2px;
+    font-weight: 600;
+    color: #777;
+}
+
+
+.container .searchBlock>input:first-of-type {
+    width: 100%;
+    padding: 6px 40px;
+    border-radius: 8px;
+    border: 1px solid #cdcbcb;
+    background-color: #eee;
+    position: relative;
+    margin-bottom: 18px;
+}
+
+.container .searchBlock>input.module:first-of-type {
+    caret-color: var(--page-color-3);
+    color: var(--page-color-3);
+}
+
+.container .searchBlock>input.filiere:first-of-type {
+    caret-color: var(--page-color-2);
+    color: var(--page-color-2);
+}
+
+.container .searchBlock>input.prof:first-of-type {
+    caret-color: var(--page-color-1);
+    color: var(--page-color-1);
+}
+
+.container .searchBlock>input.modalite:first-of-type {
+    caret-color: var(--page-color-4);
+    color: var(--page-color-4);
+}
+
+.container .searchBlock::before {
+    content: "\f002";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    position: relative;
+    z-index: 1;
+    top: 32px;
+    left: 12px;
+    font-size: 15px;
+}
+
+.container .searchBlock.loop1::before {
+    color: var(--page-color-1);
+}
+
+.container .searchBlock.loop2::before {
+    color: var(--page-color-2);
+}
+
+.container .searchBlock.loop3::before {
+    color: var(--page-color-3);
+}
+
+.container .searchBlock.loop4::before {
+    color: var(--page-color-4);
+}
+
+input::placeholder {
+    font-weight: 600px;
+    caret-color: #777;
+}
+
+input:focus {
+    outline: none;
+}
+
+/* Start table*/
+.container table th {
+    text-transform: capitalize;
+}
+
+.container table th:first-child {
+    border-radius: 10px 0 0;
+}
+
+.container table th:last-of-type {
+    border-radius: 0 10px 0 0;
+}
+
+.container table  thead {
+	color: #FFF
+}
+/* End table*/
+
+/*Start list prof  */
+
+.container .searchBlock>div.btnSearch {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 11px 0;
+}
+
+.container .searchBlock>div.btnSearch button:first-of-type,
+.container .searchBlock>div.btnSearch button:last-of-type {
+    width: 300px;
+    border: navajowhite;
+    background-color: var(--page-color-1);
+    color: #FFF;
+    padding: 5px 30px;
+    border-radius: 31px;
+    font-weight: 600;
+    text-transform: capitalize;
+    outline: none;
+    transition: .3s;
+}
+
+.container .searchBlock>div.btnSearch button:hover {
+    background-color: #3b77bd
+}
+
+@media (max-width: 768px) {
+
+    .container .searchBlock>div.btnSearch button:first-of-type,
+    .container .searchBlock>div.btnSearch button:last-of-type {
+        padding: 4px 20px;
+        font-size: 13px;
+        width: 130px;
+        height: 49px;
+    }
+}
+
+a.bu01{
+	    display: block;
+    margin: 40px auto;
+}
+a.bu01>button{
+	margin: 0 auto;
+    display: block;
+    border-radius: 10px;
+    color: #FFF;
+    background :var(--page-color-2) ;
+    transition : .8s
+}
+
+a.bu01>button:hover{
+	border : 1px solid var(--page-color-2)  ;
+	 background : #Fff;
+	  color:var(--page-color-2) ;
+}
+
+/*End list prof  */
+/*Start info*/
+
+
+/* End info*/

@@ -1,0 +1,74 @@
+@charset "windows-1256";
+
+div.box_cont{
+	     margin: calc(64px + 41px) 86px 35px;
+    color: #777;
+    font-size: 17px;
+}
+
+div.box_cont>p{    
+	color: #777;
+    font-size: 19px;
+}
+
+div.box_cont>p span{
+	    color: #5a5555;
+    font-weight: bold;
+}
+div.box_cont>div{
+display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 27px;
+    margin-top: 22px;
+    flex-wrap: wrap;
+}
+
+div.box_cont>div button{
+	color: #FFF;
+    width: 217px;
+    height: 136px;
+    font-size: 24px;
+    border-radius: 3px;
+    text-transform: capitalize;
+    border: 9px solid #FFF;
+    box-shadow: 5px 4px 12px 2px #00000045;
+    transition : .4s
+}
+
+div.box_cont>div button:hover{
+	transform: scale(1.09);
+	opacity : .9;
+}
+
+div.box_cont a {
+	position : relative;
+}
+
+
+div.box_cont i {
+	    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #FFF;
+    top: 20%;
+    font-size: 19px;
+    z-index: 100;
+	
+}
+
+@media (max-width: 768px) {
+	
+	div.box_cont>p{
+	 transform: translateX(41px);}
+	
+	div.box_cont>div{
+    transform: translateX(-77px);
+    flex-direction: column;
+    row-gap: 10px;
+	}
+	
+	
+}
+
+
