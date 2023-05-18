@@ -144,7 +144,7 @@
             </div>
             <div class="head">
                 <h2>infos modalites </h2>
-                <p>consulter les information concernanant les elements du module et leur modalite</p>
+                <p>consulter les informations concernanant les elements du Module et leur modalite</p>
             </div>
             
              <div class='infor'>
